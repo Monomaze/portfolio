@@ -49,3 +49,46 @@ button {
     font-size: 18px;
     font-weight: 400px;
 }
+
+.banner {
+    background-color: rgba(255, 255, 255, 0.12);
+    width: 100%;
+    transform: rotate(-3deg);
+    overflow: hidden;
+    position: absolute;
+    bottom: 5%;
+}
+
+.marquee {
+    --gap: 56px;
+    display: flex;
+    overflow: hidden;
+    user-select: none;
+    gap: var(--gap);
+}
+
+.marquee-content {
+    font-size: 32px;
+    font-weight: 400;
+    color: #3DCFB6;
+    flex-shrink: 0;
+    display: flex;
+    justify-content: space-around;
+    min-width: 100%;
+    padding: 12px 32px;
+    animation: txt-scroll-animation 15s linear infinite;
+    gap: var(--gap);
+    >div {
+        display: flex;
+        flex-direction: row; 
+
+    }
+}
+
+@keyframes txt-scroll-animation {
+    from {
+        transform: translateX(0)
+    } to {
+        transform: translateX(calc(-100% - var(--gap)));
+    }
+}
