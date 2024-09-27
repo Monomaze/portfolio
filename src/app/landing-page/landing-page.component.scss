@@ -53,6 +53,17 @@ button {
     color: white;
     font-size: 18px;
     font-weight: 400px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    cursor: pointer;
+    gap: var(--gap);
+    >span {
+        display: inline-block;
+    }
+    &:hover span {
+        animation: btn-txt-scroll-animation 3s linear infinite;
+    }
 }
 
 .banner {
@@ -100,6 +111,9 @@ button {
     justify-content: center;
     align-items: center;
     gap: 24px;
+    >.v-line {
+        height: 240px;
+    }
 }
 
 .mouse-icon-border {
@@ -117,7 +131,6 @@ button {
 }
 
 .v-line {
-    height: 240px;
     width: 0;
     border: 1px solid #FFFFFF;
 }
@@ -136,3 +149,12 @@ button {
         top: 25px;
     }
 }
+
+@keyframes btn-txt-scroll-animation {
+    from {
+      transform: translateX(120%);
+    }
+    to {
+      transform: translateX(-120%);
+    }
+  }
