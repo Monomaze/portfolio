@@ -2,10 +2,6 @@ section {
     background: linear-gradient(0.25turn, #1C1C1C, #08463B);
     height: 100vh;
     width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
 }
 
 h1, h2 {
@@ -24,6 +20,15 @@ h2 {
     font-size: 40px;
     font-weight: 400;
     line-height: 40px;
+}
+
+.lp-content {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .main-content {
@@ -56,7 +61,8 @@ button {
     transform: rotate(-3deg);
     overflow: hidden;
     position: absolute;
-    bottom: 5%;
+    bottom: 10%;
+    backdrop-filter: blur(5px);
 }
 
 .marquee {
@@ -85,10 +91,48 @@ button {
     }
 }
 
+#decoration-left {
+    position: absolute;
+    left: 96px;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+}
+
+.mouse-icon-border {
+    height: 48px;
+    width: 31px;
+    border-radius: 32px;
+    border: 1px solid #FFFFFF;
+    >img {
+        position: relative;
+        top: 18px;
+        left: 12px;
+        height: 12px;
+        animation: mouse-scroll-animation .75s alternate infinite;
+    }
+}
+
+.v-line {
+    height: 240px;
+    width: 0;
+    border: 1px solid #FFFFFF;
+}
+
+/* Animations */
 @keyframes txt-scroll-animation {
     from {
         transform: translateX(0)
     } to {
         transform: translateX(calc(-100% - var(--gap)));
+    }
+}
+
+@keyframes mouse-scroll-animation {
+    to {
+        top: 25px;
     }
 }
