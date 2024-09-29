@@ -72,7 +72,7 @@ button {
     transform: rotate(-3deg);
     overflow: hidden;
     position: absolute;
-    bottom: 10%;
+    bottom: 8%;
     backdrop-filter: blur(5px);
 }
 
@@ -112,7 +112,7 @@ button {
     align-items: center;
     gap: 24px;
     >.v-line {
-        height: 240px;
+        height: 25vh;
     }
 }
 
@@ -129,6 +129,38 @@ button {
         animation: mouse-scroll-animation .75s alternate infinite;
     }
 }
+
+#decoration-right {
+    position: absolute;
+    right: 96px;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    width: 32px;
+    >.v-line {
+        height: 35vh;
+    }
+    >a {
+        transform: translate(0, -450%) rotate(-90deg);
+        text-decoration: none;
+        color: #FFFFFF;
+        font-size: 18px;
+        cursor: pointer;
+        &:hover {
+            color: #3DCFB6;
+        }
+    }
+    >img {
+        cursor: pointer;    
+        &:hover {
+            filter: brightness(500%);
+        }
+    }
+}
+
 
 .v-line {
     width: 0;
