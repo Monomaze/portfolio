@@ -1,0 +1,73 @@
+section {
+    background-color: #1C1C1C;
+}
+
+h1 {
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 64px;
+    letter-spacing: -3%;
+}
+
+p {
+    margin: 0;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 144px 112px;
+    height: 708px;
+}
+
+.photo-container {
+    align-self: flex-start;
+}
+
+.photo {
+    width: 568px;
+    height: 568px;
+}
+
+.about-me-container {
+    width: 568px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-self: flex-end;
+}
+
+.content {
+    border: 1px solid #3DCFB6;
+    padding: 40px;
+    border-radius: 30px;
+    background-color: #3DCFB61A;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.bulletpoints {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    >div {
+        display: flex;
+        flex-direction: row;
+        width: 504px;
+        gap: 24px;
+        >img {
+            width: 32px;
+            height: 32px;
+        }
+    }
+}
