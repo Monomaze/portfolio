@@ -45,19 +45,8 @@ h2 {
 }
 
 button {
-    height: 48px;
-    border-radius: 100px;
-    border: solid 1px #FFFFFF;
-    padding: 0 24px;
-    background-color: transparent;
-    color: white;
-    font-size: 18px;
-    font-weight: 400px;
-    display: flex;
-    align-items: center;
     overflow: hidden;
-    cursor: pointer;
-    gap: var(--gap);
+    gap: 56px;
     >span {
         display: inline-block;
     }
@@ -161,7 +150,6 @@ button {
     }
 }
 
-
 .v-line {
     width: 0;
     border: 1px solid #FFFFFF;
@@ -181,12 +169,3 @@ button {
         top: 25px;
     }
 }
-
-@keyframes btn-txt-scroll-animation {
-    from {
-      transform: translateX(120%);
-    }
-    to {
-      transform: translateX(-120%);
-    }
-  }
