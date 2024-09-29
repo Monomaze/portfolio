@@ -30,3 +30,27 @@
 .font-firacode {
     font-family: 'FiraCode';
 }
+
+button {
+    height: 48px;
+    width: fit-content;
+    border-radius: 100px;
+    border: solid 1px #FFFFFF;
+    padding: 0 24px;
+    background-color: transparent;
+    color: white;
+    font-size: 18px;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+@keyframes btn-txt-scroll-animation {
+    from {
+      transform: translateX(120%);
+    }
+    to {
+      transform: translateX(-120%);
+    }
+  }
