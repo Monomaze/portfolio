@@ -1,8 +1,8 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
-import { LandingPageComponent } from './landing-page/landing-page.component';
-import { AboutMeComponent } from './about-me/about-me.component';
+import { LandingPageComponent } from './components/landing-page/landing-page.component';
+import { AboutMeComponent } from './components/about-me/about-me.component';
 
 @Component({
   selector: 'app-root',
