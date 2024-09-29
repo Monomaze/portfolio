@@ -60,3 +60,47 @@ nav {
 .nav-btn-txt:hover + .dot-hover {
     opacity: 1;
 }
+
+.logo-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 30px;
+    font-weight: 700;
+    color: #FFFFFF;
+    line-height: 0.8;
+    cursor: pointer;
+    >svg {
+        width: 80px;
+        height: 80px;
+        >.box-filled, .icons-filled {
+            fill: #3DCFB6;
+        }
+        >.inner-filled {
+            fill:transparent;
+            stroke: transparent;
+            stroke-width: 0; 
+        }
+        >.box-filled {
+            fill: #3DCFB6;
+        }
+    }
+    &:hover {
+        >div {
+            color: transparent; 
+            -webkit-text-stroke: 0.5px white;
+        }
+        >svg {
+            >.box-filled {
+                fill: transparent; 
+                stroke: #3DCFB6;
+                stroke-width: 1px; 
+            }
+            >.inner-filled {
+                fill: #3DCFB6;
+                stroke: #3DCFB6;
+                stroke-width: 1px; 
+            }
+        }
+    }
+}
