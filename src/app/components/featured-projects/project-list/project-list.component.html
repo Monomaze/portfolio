@@ -1,1 +1,9 @@
-<p>project-list works!</p>
+<div class="project-list">
+    @for (entry of projectEntry; track entry.title) {
+        <div class="project-entry">
+            <span class="title font-firacode">{{entry.title}}</span>
+            <span class="tech font-karla">{{entry.tech}}</span>
+            <img src="{{entry.imgPath}}" alt="">
+        </div>
+    }
+</div>
