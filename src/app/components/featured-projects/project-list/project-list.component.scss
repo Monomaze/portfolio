@@ -1,5 +1,6 @@
 .project-list {
     border-top: 1px solid white;
+    position: relative;
 }
 
 .project-entry {
@@ -37,4 +38,48 @@ img {
     top: -45%;
     display: none;
     aspect-ratio: 16/9;
+}
+
+dialog {
+    background-color: transparent;
+    border-color: transparent;
+}
+
+.bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 10;
+}
+
+.content {
+    position: fixed;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 1065px;
+    height: 560px;
+    border-radius: 30px;
+    border: 1px;
+    background: linear-gradient(0.25turn, #1C1C1C, #08463B);
+    z-index: 20;
+    padding: 48px 96px;
+}
+
+button {
+    position: absolute;
+    top: 48px;
+    right: 96px;
+}
+
+#next-entry-btn {
+    position: absolute;
+    bottom: 48px;
+    right: 96px;
+    top: unset;
 }

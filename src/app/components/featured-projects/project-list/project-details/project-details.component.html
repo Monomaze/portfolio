@@ -1,0 +1,27 @@
+<div class="wrapper">
+    <div class="wrapper-left">
+        <div class="head">
+            <h1 class="font-karla">0{{project.id}}</h1>
+            <h2 class="font-firacode">{{project.title}}</h2>
+        </div>
+        <div class="des-wrapper">
+            <div id="project-des">
+                <h3 class="font-firacode">What is this project about?</h3>
+                <p class="font-karla">
+                    {{project.description}}
+                </p>
+            </div>
+            <div id="skill-list">
+                @for (tech of project.tech; track $index) {
+                    <img src="{{project.icons[$index]}}" alt="">
+                    <span>{{tech}}</span>
+                }
+            </div>
+        </div>
+        <div class="btn-layout">
+            <a href="{{project.githubUrl}}"><button><span>Github</span><img src="assets/images/icons/arrow_outward.svg" alt=""></button></a>
+            <a href="{{project.liveTestUrl}}"><button><span>Live Test</span><img src="assets/images/icons/arrow_outward.svg" alt=""></button></a>
+        </div>
+    </div>
+    <img class="screenshot" src="{{project.imgPath}}" alt="">
+</div>

@@ -1,33 +1,74 @@
-import { Component } from '@angular/core';
+import { Component, ViewChild } from '@angular/core';
+import { ProjectDetailsComponent } from './project-details/project-details.component';
+import { Project } from '../../../models/project.interface';
 
 @Component({
   selector: 'app-project-list',
   standalone: true,
-  imports: [],
+  imports: [ProjectDetailsComponent],
   templateUrl: './project-list.component.html',
-  styleUrl: './project-list.component.scss'
+  styleUrl: './project-list.component.scss',
 })
 export class ProjectListComponent {
-  projectEntry = [
+  newEntry: any;
+
+  projectData: Project[] = [
     {
-      title: "Join",
-      tech: "Javascript | HTML | CSS | Firebase",
-      imgPath: "/assets/images/pictures/join.png"
+      id: 1,
+      title: 'Join',
+      description:
+        'Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assing users and categories.',
+      tech: ['Javascript', 'Firebase', 'CSS', 'HTML'],
+      githubUrl: 'https://www.google.com',
+      liveTestUrl: 'https://www.youtube.com',
+      imgPath: '/assets/images/pictures/join.png',
+      icons: ['/assets/images/icons/github.svg', '/assets/images/icons/github.svg', '/assets/images/icons/github.svg', '/assets/images/icons/github.svg']
     },
     {
-      title: "Mana Trails",
-      tech: "JavaScript | HTML | CSS",
-      imgPath: "/assets/images/pictures/manatrails.png"
+      id: 2,
+      title: 'ManaTrails',
+      description:
+        'TRst',
+      tech: ['Javascript', 'CSS', 'HTML'],
+      githubUrl: 'www.google.com',
+      liveTestUrl: 'www.youtube.com',
+      imgPath: '/assets/images/pictures/manatrails.png',
+      icons: ['/assets/images/icons/github.svg', '/assets/images/icons/github.svg', '/assets/images/icons/github.svg']
     },
     {
-      title: "Pokedex",
-      tech: "JavaScript | HTML | CSS | API",
-      imgPath: "/assets/images/pictures/pokedex.png"
+      id: 3,
+      title: 'Pokedex',
+      description:
+        'Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assing users and categories.',
+      tech: ['Javascript', 'Rest-API', 'CSS', 'HTML'],
+      githubUrl: 'www.google.com',
+      liveTestUrl: 'www.youtube.com',
+      imgPath: '/assets/images/pictures/pokedex.png',
+      icons: ['/assets/images/icons/github.svg', '/assets/images/icons/github.svg', '/assets/images/icons/github.svg', '/assets/images/icons/github.svg']
     },
     {
-      title: "My Portfolio",
-      tech: "Angular | TypeScript | HTML | SCSS",
-      imgPath: "/assets/images/pictures/portfolio.png"
+      id: 4,
+      title: 'My Portfolio',
+      description:
+        'Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assing users and categories.',
+      tech: ['CSS', 'HTML'],
+      githubUrl: 'www.google.com',
+      liveTestUrl: 'www.youtube.com',
+      imgPath: '/assets/images/pictures/portfolio.png',
+      icons: ['/assets/images/icons/github.svg', '/assets/images/icons/github.svg']
+    },
+  ];
+
+
+
+  nextEntry(index: number) {
+    let entry;
+    let nextIndex = index + 1;
+    if (nextIndex >= this.projectData.length) {
+      nextIndex = 0;
     }
-  ]
+    entry = this.projectData[nextIndex];
+    console.log(entry);
+    return entry;
+  }
 }
