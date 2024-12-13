@@ -5,11 +5,12 @@ import { LandingPageComponent } from './components/landing-page/landing-page.com
 import { AboutMeComponent } from './components/about-me/about-me.component';
 import { SkillsComponent } from './components/skills/skills.component';
 import { FeaturedProjectsComponent } from './components/featured-projects/featured-projects.component';
+import { ContactFormularComponent } from './components/contact-formular/contact-formular.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule, RouterOutlet, LandingPageComponent, AboutMeComponent, SkillsComponent, FeaturedProjectsComponent],
+  imports: [CommonModule, RouterOutlet, LandingPageComponent, AboutMeComponent, SkillsComponent, FeaturedProjectsComponent, ContactFormularComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })

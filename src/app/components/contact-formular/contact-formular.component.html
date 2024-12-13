@@ -1,0 +1,37 @@
+<section class="font-karla">
+
+    <div class="contact-me-text-container">
+        <div class="headlines">
+            <h2>Contact me</h2>
+            <h1 class="font-firacode">Let's work together</h1>
+        </div>
+        <div class="info-container">
+            <h3 class="font-firacode">Got a problem to solve?</h3>
+            <p>Contact me through this form, I am interested in hearing from you, knowing your ideas and contributing to your projects with my work.
+            Need a Frontend developer? Let's talk!</p>
+        </div>
+    </div>
+
+    <form (ngSubmit)="onSubmit()">
+    
+        <div class="border-bot">
+            <div class="contact-input-container">
+                <label class="font-firacode" for="name">Name</label>
+                <input [(ngModel)]="contactData.name" type="text" id="name" name="name" placeholder="Your name goes here">
+            </div>
+    
+            <div class="contact-input-container">
+                <label class="font-firacode" for="email">Email</label>
+                <input [(ngModel)]="contactData.email" type="email" id="email" name="email" placeholder="youremail@email.com">
+            </div>
+            <div class="contact-input-container">
+                <label class="font-firacode" for="message">Message</label>
+                <textarea [(ngModel)]="contactData.message" id="message" name="message" placeholder="Hello Brian, I am interested in..."></textarea>
+            </div>
+        </div>
+
+    
+        <input type="submit" value="Submit">
+  
+    </form>
+</section>
