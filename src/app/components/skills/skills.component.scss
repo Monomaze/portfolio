@@ -1,5 +1,5 @@
 section {
-    background: radial-gradient(circle at left 50%, #08463BFF, #1C1C1C 15%);
+    background: radial-gradient(circle at left 50%, #08463BFF, #1C1C1C 12%);
 }
 
 button {
@@ -17,8 +17,9 @@ button {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-around;
-    padding: 0 112px 144px 112px;
+    justify-content: center;
+    padding: 144px 112px 144px 112px;
+    gap: 100px;
 }
 
 .skill-container {

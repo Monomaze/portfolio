@@ -6,9 +6,10 @@ section {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-around;
-    padding: 144px 112px;
+    justify-content: center;
+    padding: 144px 112px 0 112px;
     height: 708px;
+    gap: 100px;
 }
 
 .photo-container {
