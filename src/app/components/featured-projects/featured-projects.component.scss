@@ -3,19 +3,23 @@ section {
     color: white;
     display: flex;
     justify-content: center;
+    gap: 100px;
+    padding: 0 112px 144px 112px;
 }
 
 .main-container {
-    padding: 0 112px 144px 112px;
     display: flex;
     flex-direction: column;
     gap: 41px;
     width: 880px;
-    transform: translateX(-20%);
 }
 
 .headlines {
     display: flex;
     flex-direction: column;
     gap: 20px;
+}
+
+.empty-container {
+    width: 332px;
 }
