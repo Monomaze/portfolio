@@ -9,7 +9,7 @@
             <span class="tech font-karla">
                 @for (tech of entry.tech; track $index) {
                     {{tech}}
-                    @if ($index <= entry.tech.length - 1) {
+                    @if ($index < entry.tech.length - 1) {
                         |
                     }
                 }
