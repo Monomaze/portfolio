@@ -12,21 +12,30 @@
         </div>
     </div>
 
-    <form (ngSubmit)="onSubmit()">
+    <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
     
         <div class="border-bot">
             <div class="contact-input-container">
                 <label class="font-firacode" for="name">Name</label>
-                <input [(ngModel)]="contactData.name" type="text" id="name" name="name" placeholder="Your name goes here">
+                <input #name="ngModel" [(ngModel)]="contactData.name" type="text" id="name" name="name" placeholder="Your name goes here" required>
+                @if (!name.valid && name.touched && !name.disabled) {
+                    <span>Please enter your name</span>
+                }
             </div>
     
             <div class="contact-input-container">
                 <label class="font-firacode" for="email">Email</label>
-                <input [(ngModel)]="contactData.email" type="email" id="email" name="email" placeholder="youremail@email.com">
+                <input #email="ngModel" [(ngModel)]="contactData.email" type="email" id="email" name="email" placeholder="youremail@email.com" required pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}">
+                @if (!email.valid && email.touched && !email.disabled) {
+                    <span>Please enter your email</span>
+                }
             </div>
             <div class="contact-input-container">
                 <label class="font-firacode" for="message">Message</label>
-                <textarea [(ngModel)]="contactData.message" id="message" name="message" placeholder="Hello Brian, I am interested in..."></textarea>
+                <textarea #message="ngModel" [(ngModel)]="contactData.message" id="message" name="message" placeholder="Hello Brian, I am interested in..." required></textarea>
+                @if (!message.valid && message.touched && !message.disabled) {
+                    <span>Please enter a message</span>
+                }
             </div>
         </div>
 
