@@ -1,0 +1,111 @@
+section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #1C1C1C;
+    color: white;
+    padding: 112px 144px 64px 144px;
+}
+
+.logo-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 30px;
+    font-weight: 700;
+    color: #FFFFFF;
+    line-height: 0.8;
+    cursor: pointer;
+    >svg {
+        width: 80px;
+        height: 80px;
+        >.box-filled, .icons-filled {
+            fill: #3DCFB6;
+        }
+        >.inner-filled {
+            fill:transparent;
+            stroke: transparent;
+            stroke-width: 0; 
+        }
+        >.box-filled {
+            fill: #3DCFB6;
+        }
+    }
+    &:hover {
+        >div {
+            color: transparent; 
+            -webkit-text-stroke: 0.5px white;
+        }
+        >svg {
+            >.box-filled {
+                fill: transparent; 
+                stroke: #3DCFB6;
+                stroke-width: 1px; 
+            }
+            >.inner-filled {
+                fill: #3DCFB6;
+                stroke: #3DCFB6;
+                stroke-width: 1px; 
+            }
+        }
+    }
+}
+
+.left-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 40px;
+}
+
+.left-text {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    >span {
+        margin-left: 10px;
+        font-size: 16px;
+        font-weight: 400;
+    }
+}
+
+.mid-container {
+    color: #3DCFB6;
+    font-size: 18px;
+    font-weight: 400;
+    display: flex;
+    align-self: center;
+}
+
+.right-container {
+    font-size: 16px;
+    font-weight: 400;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-self: flex-end;
+    >div {
+        display: flex;
+        flex-direction: row;
+        gap: 8px;
+    }
+}
+
+.socials-url {
+    text-decoration: none;
+    color: #FFFFFF;
+    position: relative;
+}
+
+.socials-url:hover {
+    color: #3DCFB6;
+}
+
+.socials-url:hover::before {
+    content: "\2022";
+    color: #3DCFB6;
+    position: absolute;
+    left: -12px;
+    font-size: 30px;
+    line-height: 0.55;
+}

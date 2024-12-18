@@ -6,11 +6,12 @@ import { AboutMeComponent } from './components/about-me/about-me.component';
 import { SkillsComponent } from './components/skills/skills.component';
 import { FeaturedProjectsComponent } from './components/featured-projects/featured-projects.component';
 import { ContactFormularComponent } from './components/contact-formular/contact-formular.component';
+import { FooterComponent } from './shared/footer/footer.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule, RouterOutlet, LandingPageComponent, AboutMeComponent, SkillsComponent, FeaturedProjectsComponent, ContactFormularComponent],
+  imports: [CommonModule, RouterOutlet, LandingPageComponent, AboutMeComponent, SkillsComponent, FeaturedProjectsComponent, ContactFormularComponent, FooterComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
