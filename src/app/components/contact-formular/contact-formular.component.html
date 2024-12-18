@@ -13,7 +13,7 @@
     </div>
 
     <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
-    
+    <div>
         <div class="border-bot">
             <div class="contact-input-container">
                 <label class="font-firacode" for="name">Name</label>
@@ -38,13 +38,12 @@
                 }
             </div>
         </div>
-
-        <div>
-            <input type="checkbox">
-            <span>I've read the <a href="">privacy policy</a> and agree to the processing of my data as outlined.</span>
-        </div>
-    
-        <button type="submit" value="Submit">Say Hello ;)</button>
+    </div>
+    <div>
+        <input type="checkbox" id="check" required>
+        <label class="font-karla" for="check">I've read the <a href="" class="font-firacode checkbox-label-url">privacy policy</a> and agree to the processing of my data as outlined.</label>
+    </div>
+    <button type="submit" value="Submit">Say Hello ;)</button>
   
     </form>
 </section>

@@ -29,7 +29,14 @@ section {
 form {
     display: flex;
     flex-direction: column;
-    width: 616px;
+    align-items: center;
+    gap: 40px;
+    >div {
+        width: 616px;
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
 }
 
 .contact-input-container {
@@ -54,4 +61,65 @@ input, textarea {
 
 .border-bot {
     border-bottom: 1px solid #3DCFB650;
+}
+
+button {
+    color: #FFFFFF80;
+    border-color: #FFFFFF50;
+    &:hover {
+        color: #FFFFFF;
+        border-color: #FFFFFF;
+    }
+}
+
+[type="checkbox"] + label {
+    position: absolute;
+    line-height: 24px;
+    font-size: 15px;
+    align-self: center;
+    font-weight: 400;
+}
+  
+[type="checkbox"] {
+    position: relative;
+    left: 15px;
+    top: -4px;
+    z-index: 0;
+    appearance: none;
+    --webkit-appearance: none;
+}
+
+[type="checkbox"] + label::before {
+    width: 24px;
+    height: 24px;
+    background-image: url("../../../../src/assets/images/icons/unchecked.svg");
+    display: block;
+    content: "";
+    float: left;
+    margin-right: 5px;
+    z-index: 5;
+    position: relative;
+    &:hover {
+        background-image: url("../../../../src/assets/images/icons/unchecked_hover.svg");
+    }
+}
+
+[type="checkbox"]:checked+label::before {
+    background-image: url("../../../../src/assets/images/icons/checked.svg");
+}
+
+[type="checkbox"]:not(:checked):hover+label::before {
+    background-image: url("../../../../src/assets/images/icons/unchecked_hover.svg");
+}
+
+[type="checkbox"]:checked:hover+label::before {
+    background-image: url("../../../../src/assets/images/icons/checked_hover.svg");
+}
+
+.checkbox-label-url {
+    color: #3DCFB6;
+    text-decoration: none;
+    &:hover {
+        color: #FFFFFF;
+    }
 }
