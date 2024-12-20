@@ -35,7 +35,6 @@ form {
         width: 616px;
         display: flex;
         flex-direction: column;
-        gap: 40px;
     }
 }
 
@@ -59,6 +58,11 @@ input, textarea {
     }
 }
 
+textarea {
+    resize: none;
+    max-height: 32px;
+}
+
 .border-bot {
     border-bottom: 1px solid #3DCFB650;
 }
@@ -66,10 +70,13 @@ input, textarea {
 button {
     color: #FFFFFF80;
     border-color: #FFFFFF50;
-    &:hover {
-        color: #FFFFFF;
-        border-color: #FFFFFF;
-    }
+    cursor: unset;
+}
+
+.EnabledBtn {
+    color: #FFFFFF;
+    border-color: #FFFFFF;
+    cursor: pointer;
 }
 
 [type="checkbox"] + label {
@@ -122,4 +129,16 @@ button {
     &:hover {
         color: #FFFFFF;
     }
+}
+
+.validation-text {
+    font-size: 14px;
+    font-weight: 400;
+    color: #EC7B7B;
+}
+
+#privacy-error {
+    display: none;
+    margin-left: 15px;
+    margin-top: 12px;
 }

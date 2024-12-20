@@ -19,7 +19,7 @@
                 <label class="font-firacode" for="name">Name</label>
                 <input #name="ngModel" [(ngModel)]="contactData.name" type="text" id="name" name="name" placeholder="Your name goes here" required>
                 @if (!name.valid && name.touched && !name.disabled) {
-                    <span>Please enter your name</span>
+                    <span class="validation-text">Please enter your name</span>
                 }
             </div>
     
@@ -27,23 +27,29 @@
                 <label class="font-firacode" for="email">Email</label>
                 <input #email="ngModel" [(ngModel)]="contactData.email" type="email" id="email" name="email" placeholder="youremail@email.com" required pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}">
                 @if (!email.valid && email.touched && !email.disabled) {
-                    <span>Please enter your email</span>
+                    <span class="validation-text">Please enter your email</span>
                 }
             </div>
             <div class="contact-input-container">
                 <label class="font-firacode" for="message">Message</label>
                 <textarea #message="ngModel" [(ngModel)]="contactData.message" id="message" name="message" placeholder="Hello Brian, I am interested in..." required></textarea>
                 @if (!message.valid && message.touched && !message.disabled) {
-                    <span>Please enter a message</span>
+                    <span class="validation-text">Please enter a message</span>
                 }
             </div>
         </div>
     </div>
     <div>
-        <input type="checkbox" id="check" required>
+        <input type="checkbox" id="check" (change)="toggleEditable()" required>
         <label class="font-karla" for="check">I've read the <a href="" class="font-firacode checkbox-label-url">privacy policy</a> and agree to the processing of my data as outlined.</label>
+        <span id="privacy-error" class="validation-text">Please accept the privacy policy</span> 
     </div>
-    <button type="submit" value="Submit">Say Hello ;)</button>
+    @if (email.valid && name.valid && message.valid && editable == true) {
+        <button class="EnabledBtn" id="submit" type="submit" value="Submit">Say Hello ;)</button>
+    } @else {
+        <button id="submit" type="submit" value="Submit" disabled>Say Hello ;)</button>
+    }
+
   
     </form>
 </section>
