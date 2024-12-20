@@ -21,15 +21,8 @@
             <div class="content">
                 <button (click)="dialog.close()">SCHLIEßEN</button>
 
-                @if (newEntry != entry) {
-                    <app-project-details [project]="entry">
-                    </app-project-details>
-                } @else {
-                    <app-project-details [project]="newEntry">
-                    </app-project-details>
-                    
-                }
-                <button id="next-entry-btn" (click)="newEntry = nextEntry(i)">Next entryyyyyyyyyyyy</button>
+                <app-project-details [project]="projectData[currentIndex]"></app-project-details>
+                <button id="next-entry-btn" (click)="nextEntry()">Next entryyyyyyyyyyyy</button>
             </div>
             <div class="bg" (click)="dialog.close()">
             </div>

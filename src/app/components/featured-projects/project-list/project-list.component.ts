@@ -10,7 +10,7 @@ import { Project } from '../../../models/project.interface';
   styleUrl: './project-list.component.scss',
 })
 export class ProjectListComponent {
-  newEntry: any;
+  currentIndex: number = 0;
 
   projectData: Project[] = [
     {
@@ -59,16 +59,18 @@ export class ProjectListComponent {
     },
   ];
 
+  openDialog(index: number): void {
+    this.currentIndex = index;
+    const dialog = document.querySelector('dialog');
+    dialog?.showModal();
+  }
 
+  closeDialog(): void {
+    const dialog = document.querySelector('dialog');
+    dialog?.close();
+  }
 
-  nextEntry(index: number) {
-    let entry;
-    let nextIndex = index + 1;
-    if (nextIndex >= this.projectData.length) {
-      nextIndex = 0;
-    }
-    entry = this.projectData[nextIndex];
-    console.log(entry);
-    return entry;
+  nextEntry(): void {
+    this.currentIndex = (this.currentIndex + 1) % this.projectData.length;
   }
 }
