@@ -1,4 +1,24 @@
+<div id="background" class="bg" (click)="showBurgerNav()"></div>
 <header>
+    <img class="burger-menu-icon" (click)="showBurgerNav()" src="/assets/images/icons/menu.svg" alt="">
+    <div id="burger-nav" class="burger-nav font-firacode">
+        <div class="nav-btn">
+            <a href="" class="nav-btn-txt">About me</a>
+            <div class="dot-hover">&bull;</div>
+        </div>
+        <div class="nav-btn">
+            <a href="" class="nav-btn-txt">Skills</a>
+            <div class="dot-hover">&bull;</div>
+        </div>
+        <div class="nav-btn">
+            <a href="" class="nav-btn-txt">Projects</a>
+            <div class="dot-hover">&bull;</div>
+        </div>
+        <div class="lang-btn-switch">
+            <div class="lang-btn active">EN</div>
+            <div class="lang-btn inactive">DE</div>
+        </div>
+    </div>
     <nav class="font-firacode">
         <div class="lang-btn-switch">
             <div class="lang-btn active">EN</div>

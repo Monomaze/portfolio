@@ -8,5 +8,8 @@ import { Component } from '@angular/core';
   styleUrl: './header.component.scss'
 })
 export class HeaderComponent {
-
+  showBurgerNav() {
+    document.getElementById('burger-nav')?.classList.toggle('mobile-nav');
+    document.getElementById('background')?.classList.toggle('mobile-nav');
+  }
 }

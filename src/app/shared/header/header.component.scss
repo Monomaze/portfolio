@@ -107,3 +107,69 @@ nav {
         }
     }
 }
+
+.burger-menu-icon {
+    display: none;
+}
+
+.burger-nav {
+    display: none;
+    z-index: 200;
+}
+
+.mobile-nav {
+    display: flex !important;
+}
+
+.bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.2);
+    z-index: 150;
+    display: none;
+}
+
+a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+@media(max-width: 850px) {
+    nav {
+        display: none;
+    }
+
+    .burger-menu-icon {
+        display: block;
+        cursor: pointer;
+    }
+
+    header {
+        flex-direction: row-reverse;
+        left: 16px;
+        right: 16px;
+    }
+
+    .burger-nav {
+        position: absolute;
+        top: 48px;
+        flex-direction: column;
+        border-radius: 30px;
+        border: 1px solid #3DCFB6;
+        padding: 40px 77px;
+        gap: 24px;
+        color: #FFFFFF;
+        font-size: 18px;
+        font-weight: 400;
+        background: linear-gradient(0.25turn, #1C1C1C, #08463B);
+    }
+}
+
+@media screen and (orientation: landscape) {
+    .burger-nav {
+        display: none;
+    }
+}
