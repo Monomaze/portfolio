@@ -2,6 +2,9 @@ section {
     background: linear-gradient(0.25turn, #1C1C1C, #08463B);
     height: 100vh;
     width: 100%;
+    position: relative;
+    overflow: hidden;
+    z-index: -1;
 }
 
 h1, h2 {
@@ -57,7 +60,7 @@ button {
 
 .banner {
     background-color: rgba(255, 255, 255, 0.12);
-    width: 100%;
+    width: 105%;
     transform: rotate(-3deg);
     overflow: hidden;
     position: absolute;
@@ -208,10 +211,7 @@ button {
     }
 }
 
-@media(max-width: 700px) {
-    h1 {
-        font-size: 48px;
-    }
+@media(max-width: 850px) {
     #decoration-right {
         right: 16px;
         gap: 8px;
@@ -222,6 +222,12 @@ button {
         >.v-line {
             height: 20vh;
         }
+    }
+}
+
+@media(max-width: 700px) {
+    h1 {
+        font-size: 48px;
     }
 
     .banner {
