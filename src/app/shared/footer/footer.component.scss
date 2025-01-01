@@ -112,9 +112,6 @@ section {
 }
 
 @media (max-width: 1300px) {
-    section {
-        padding: 80px 16px;
-    }
 
     .mid-container {
         position: absolute;
@@ -123,6 +120,12 @@ section {
         transform: translateX(-50%);
         text-align: center;
         width: 206px;
+    }
+}
+
+@media (max-width: 850px) {
+    section {
+        padding: 80px 16px;
     }
 }
 
