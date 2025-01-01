@@ -14,15 +14,19 @@
                     }
                 }
             </span>
-            <img src="{{entry.imgPath}}" alt="">
+            <img class="preview-img" src="{{entry.imgPath}}" alt="">
         </div>
 
         <dialog #dialog>
             <div class="content">
-                <button (click)="dialog.close()">SCHLIEßEN</button>
+                <img class="close-btn" (click)="dialog.close()" src="/assets/images/icons/close.svg" alt="gtdxg">
 
                 <app-project-details [project]="projectData[currentIndex]"></app-project-details>
-                <button id="next-entry-btn" (click)="nextEntry()">Next entryyyyyyyyyyyy</button>
+                <!-- <button id="next-entry-btn" (click)="nextEntry()">Next entryyyyyyyyyyyy</button> -->
+                 <div id="next-entry-btn" (click)="nextEntry()">
+                    <span>Next project</span>
+                    <img src="/assets/images/icons/arrow_forward.svg" alt="">
+                 </div>
             </div>
             <div class="bg" (click)="dialog.close()">
             </div>

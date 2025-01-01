@@ -4,10 +4,10 @@ header {
     justify-content: space-between;
     align-items: center;
     height: 50px;
-    width: 90%;
     position: absolute;
     top: 48px;
     left: 96px;
+    right: 96px;
 }
 
 .lang-btn-switch {
@@ -57,7 +57,7 @@ nav {
     line-height: 0.2;
 }
 
-.nav-btn-txt:hover + .dot-hover {
+.nav-btn-txt:hover+.dot-hover {
     opacity: 1;
 }
 
@@ -70,36 +70,39 @@ nav {
     color: #FFFFFF;
     line-height: 0.8;
     cursor: pointer;
+
     >svg {
         width: 80px;
         height: 80px;
-        >.box-filled, .icons-filled {
+        >.box-filled,
+        .icons-filled {
             fill: #3DCFB6;
         }
         >.inner-filled {
-            fill:transparent;
+            fill: transparent;
             stroke: transparent;
-            stroke-width: 0; 
+            stroke-width: 0;
         }
         >.box-filled {
             fill: #3DCFB6;
         }
     }
+
     &:hover {
         >div {
-            color: transparent; 
+            color: transparent;
             -webkit-text-stroke: 0.5px white;
         }
         >svg {
             >.box-filled {
-                fill: transparent; 
+                fill: transparent;
                 stroke: #3DCFB6;
-                stroke-width: 1px; 
+                stroke-width: 1px;
             }
             >.inner-filled {
                 fill: #3DCFB6;
                 stroke: #3DCFB6;
-                stroke-width: 1px; 
+                stroke-width: 1px;
             }
         }
     }

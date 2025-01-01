@@ -23,3 +23,24 @@ section {
 .empty-container {
     width: 332px;
 }
+
+@media (max-width: 1300px) {
+    section {
+        padding: 80px 16px;
+    }
+
+    .empty-container {
+        display: none;
+    }
+}
+
+@media(max-width: 700px) {
+    h1 {
+        font-size: 56px;
+    }
+
+    p {
+        font-size: 16px;
+        text-align: left;
+    }
+}

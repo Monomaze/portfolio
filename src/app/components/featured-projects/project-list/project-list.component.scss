@@ -29,7 +29,7 @@
     line-height: 22px;
 }
 
-img {
+.preview-img {
     width: 295px;
     height: 192px;
     border-radius: 16px;
@@ -71,10 +71,16 @@ dialog {
     padding: 48px 96px;
 }
 
-button {
+.close-btn {
     position: absolute;
     top: 48px;
     right: 96px;
+    width: 24px;
+    color: white;
+    cursor: pointer;
+    &:hover {
+        transform: scale(1.4);
+    }
 }
 
 #next-entry-btn {
@@ -82,4 +88,58 @@ button {
     bottom: 48px;
     right: 96px;
     top: unset;
+    color: #3DCFB6;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 8px;
+    cursor: pointer;
+    &:hover {
+        color: white;
+        >img {
+            /* transform: translateX(2px) translateY(-2px); */
+            animation: btn-hover-animation 0.4s forwards;
+        }
+    }
+}
+
+@keyframes btn-hover-animation {
+    from {
+        transform: translateX(0) translateY(0);
+    } to {
+        transform: translateX(4px) scale(1.1);
+    }
+}
+
+
+@media (max-width: 700px) {
+    .project-entry {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 1300px) {
+    .project-entry {
+        &:hover {
+            .preview-img  {
+                display: none;
+            }
+        }
+    }
+
+    .content {
+        max-width: 400px;
+        width: 50%;
+        height: 86%;
+    }
+
+    .close-btn {
+        top: 24px;
+        right: 24px;
+    }
+
+    #next-entry-btn {
+        bottom: 24px;
+        right: 24px;
+    }
 }

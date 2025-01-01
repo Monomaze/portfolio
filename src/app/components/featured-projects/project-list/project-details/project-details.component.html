@@ -13,8 +13,10 @@
             </div>
             <div id="skill-list">
                 @for (tech of project.tech; track $index) {
-                    <img src="{{project.icons[$index]}}" alt="">
-                    <span>{{tech}}</span>
+                    <div>
+                        <img src="{{project.icons[$index]}}" alt="">
+                        <span>{{tech}}</span>
+                    </div>
                 }
             </div>
         </div>

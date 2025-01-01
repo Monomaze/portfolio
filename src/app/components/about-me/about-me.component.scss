@@ -17,11 +17,12 @@ section {
 }
 
 .photo {
+    max-width: 100%;
     width: 568px;
-    height: 568px;
 }
 
 .about-me-container {
+    max-width: 100%;
     width: 568px;
     color: white;
     display: flex;
@@ -58,10 +59,38 @@ section {
         display: flex;
         flex-direction: row;
         width: 504px;
+        max-width: 100%;
         gap: 24px;
-        >img {
-            width: 32px;
-            height: 32px;
-        }
+    }
+}
+
+.bulletpoint-icon {
+    width: 32px;
+    height: 32px;
+    min-width: 32px;
+}
+
+
+@media(max-width: 1300px) {
+    .main-container {
+        flex-direction: column;
+        height: unset;
+        padding: 80px 16px;
+        gap: 40px;
+    }
+
+    .about-me-container, .photo-container {
+        align-self: unset;
+    }
+}
+
+@media(max-width: 700px) {
+    h1 {
+        font-size: 56px;
+    }
+
+    p {
+        font-size: 16px;
+        text-align: left;
     }
 }

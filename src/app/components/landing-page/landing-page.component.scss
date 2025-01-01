@@ -132,7 +132,7 @@ button {
     >.v-line {
         height: 35vh;
     }
-    >a {
+    >.mail-text {
         transform: translate(0, -450%) rotate(-90deg);
         text-decoration: none;
         color: #FFFFFF;
@@ -148,6 +148,10 @@ button {
             filter: brightness(500%);
         }
     }
+}
+
+.mail-icon {
+    display: none;
 }
 
 .v-line {
@@ -167,5 +171,66 @@ button {
 @keyframes mouse-scroll-animation {
     to {
         top: 25px;
+    }
+}
+
+
+@media(max-width: 1200px) {
+    h1 {
+        font-size: 62px;
+        line-height: 62px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    .mail-text {
+        display: none;
+    }
+
+    .mail-icon {
+        display: unset;
+        >img {
+            cursor: pointer;    
+            &:hover {
+                filter: brightness(500%);
+            }
+        }
+    }
+
+    #decoration-right .v-line {
+        height: 15vh;
+    }
+
+    .banner {
+        bottom: 4%;
+    }
+}
+
+@media(max-width: 700px) {
+    h1 {
+        font-size: 48px;
+    }
+    #decoration-right {
+        right: 16px;
+        gap: 8px;
+    }
+
+    #decoration-left {
+        left: 16px;
+        >.v-line {
+            height: 20vh;
+        }
+    }
+
+    .banner {
+        bottom: 3%;
+    }
+
+    .main-content {
+        >div { 
+            gap: 24px;
+        }
     }
 }
