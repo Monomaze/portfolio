@@ -1,7 +1,3 @@
-<!-- <dialog #dialog>
-    <app-project-details></app-project-details>
-</dialog> -->
-
 <div class="project-list">
     @for (entry of projectData; track entry.id; let i = $index) {
         <div class="project-entry" (click)="dialog.show()">
