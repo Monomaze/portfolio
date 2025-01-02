@@ -111,6 +111,18 @@ dialog {
     }
 }
 
+@media(max-width: 419px) {
+    .content {
+        width: 35%;
+        padding: 48px 68px;
+    }
+}
+
+@media(max-width: 440px) {
+    .content {
+        max-width: 300px;
+    }
+}
 
 @media (max-width: 700px) {
     .project-entry {
