@@ -65,5 +65,10 @@
         "location": "Dortmund, Deutschland",
         "email": "E-Mail",
         "imprint": "Impressum"
+    },
+    "imprint": {
+        "headline": "Impressum",
+        "headline2": "Kontakt",
+        "source": "Quelle"
     }
 }

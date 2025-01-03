@@ -65,5 +65,10 @@
         "location": "Dortmund Germany",
         "email": "Email",
         "imprint": "Legal notice"
+    },
+    "imprint": {
+        "headline": "Imprint",
+        "headline2": "Contact",
+        "source": "Source"
     }
 }
