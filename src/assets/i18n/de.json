@@ -58,7 +58,8 @@
         "nameValid": "Bitte tragen Sie Ihren Namen ein.",
         "emailValid": "Bitte tragen Sie ihre E-Mail ein.",
         "messageValid": "Bitte schreiben Sie eine Nachricht.",
-        "privacyValid": "Bitte akzeptieren Sie die Datenschutzerklärung."
+        "privacyValid": "Bitte akzeptieren Sie die Datenschutzerklärung.",
+        "successText": "E-Mail versendet. Vielen Dank!"
     },
     "footer": {
         "job": "Frontend Webentwickler",

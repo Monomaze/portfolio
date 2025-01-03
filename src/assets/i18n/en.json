@@ -58,7 +58,8 @@
         "nameValid": "Please enter your name",
         "emailValid": "Please enter your email",
         "messageValid": "Please enter a message",
-        "privacyValid": "Please accept the privacy policy"
+        "privacyValid": "Please accept the privacy policy",
+        "successText": "Mail sent. Thank you!"
     },
     "footer": {
         "job": "Frontend Developer",

@@ -83,6 +83,15 @@ button {
     cursor: pointer;
 }
 
+.d-none {
+    display: none;
+}
+
+.success-alert {
+    color: lightgreen;
+    text-align: center;
+}
+
 [type="checkbox"] + label {
     position: absolute;
     line-height: 20px;

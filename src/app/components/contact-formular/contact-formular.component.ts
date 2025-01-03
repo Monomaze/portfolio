@@ -38,8 +38,8 @@ export class ContactFormularComponent {
       this.http.post(this.post.endPoint, this.post.body(this.contactData))
         .subscribe({
           next: (response) => {
-
             ngForm.resetForm();
+            this.showSuccess();
           },
           error: (error) => {
             console.error(error);
@@ -60,5 +60,9 @@ export class ContactFormularComponent {
     } else {
       error.style.display = 'none';
     }
+  }
+
+  showSuccess() {
+    document.getElementById('success-msg')?.classList.remove('d-none');
   }
 }
