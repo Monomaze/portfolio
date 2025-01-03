@@ -23,7 +23,7 @@ export class ProjectListComponent {
       githubUrl: 'https://www.google.com',
       liveTestUrl: 'https://www.youtube.com',
       imgPath: '/assets/images/pictures/join.png',
-      icons: ['/assets/images/icons/github.svg', '/assets/images/icons/github.svg', '/assets/images/icons/github.svg', '/assets/images/icons/github.svg']
+      icons: ['/assets/images/icons/Javascript.svg', '/assets/images/icons/Firebase.svg', '/assets/images/icons/css.svg', '/assets/images/icons/html.svg']
     },
     {
       id: 2,
@@ -34,7 +34,7 @@ export class ProjectListComponent {
       githubUrl: 'www.google.com',
       liveTestUrl: 'www.youtube.com',
       imgPath: '/assets/images/pictures/manatrails.png',
-      icons: ['/assets/images/icons/github.svg', '/assets/images/icons/github.svg', '/assets/images/icons/github.svg']
+      icons: ['/assets/images/icons/Javascript.svg', '/assets/images/icons/css.svg', '/assets/images/icons/html.svg']
     },
     {
       id: 3,
@@ -45,18 +45,18 @@ export class ProjectListComponent {
       githubUrl: 'www.google.com',
       liveTestUrl: 'www.youtube.com',
       imgPath: '/assets/images/pictures/pokedex.png',
-      icons: ['/assets/images/icons/github.svg', '/assets/images/icons/github.svg', '/assets/images/icons/github.svg', '/assets/images/icons/github.svg']
+      icons: ['/assets/images/icons/Javascript.svg', '/assets/images/icons/Api.svg', '/assets/images/icons/css.svg', '/assets/images/icons/html.svg']
     },
     {
       id: 4,
       title: 'Portfolio',
       description:
         'Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assing users and categories.',
-      tech: ['CSS', 'HTML'],
+      tech: ['Angular', 'TypeScript', 'CSS', 'HTML'],
       githubUrl: 'www.google.com',
       liveTestUrl: 'www.youtube.com',
       imgPath: '/assets/images/pictures/portfolio.png',
-      icons: ['/assets/images/icons/github.svg', '/assets/images/icons/github.svg']
+      icons: ['/assets/images/icons/Angular.svg', '/assets/images/icons/typescript.svg', '/assets/images/icons/css.svg', '/assets/images/icons/html.svg']
     },
   ];
 
