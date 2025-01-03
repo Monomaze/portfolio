@@ -1,0 +1,26 @@
+section {
+    background-color: #1C1C1C;
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
+    color: white;
+    text-align: center;
+    padding-top: 144px;
+    text-align: left;
+    padding: 144px 144px;
+}
+
+a {
+    color: white;
+    text-align: center;
+}
+
+@media (max-width: 769px) {
+    section {
+        padding: 144px 16px;
+    }
+
+    h1 {
+        font-size: 38px;
+    }
+}

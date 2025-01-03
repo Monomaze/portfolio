@@ -5,7 +5,12 @@ section {
     background-color: #1C1C1C;
     color: white;
     padding: 112px 144px 64px 144px;
-    position: relative;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: calc(100% - 288px);
+    height: calc(398px - 224px);
 }
 
 a {
@@ -130,7 +135,10 @@ a {
 @media (max-width: 850px) {
     section {
         padding: 80px 16px;
+        width: calc(100% - 32px);
+        height: calc(398px - 160px);
     }
+    
 }
 
 @media (max-width: 325px) {

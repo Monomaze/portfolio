@@ -18,6 +18,14 @@ h2 {
     line-height: 24px;
 }
 
+html {
+    position: relative;
+    min-height: 100%;
+    padding-bottom: 350px;    
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
 @font-face {
     font-family: 'Karla';
     font-style: normal;

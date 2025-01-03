@@ -1,0 +1,35 @@
+section {
+    background-color: #1C1C1C;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 36px;
+    height: calc(100vh - 350px);
+    color: white;
+    text-align: center;
+    padding-top: 144px;
+}
+
+#source {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    >a {
+        color: white;
+        text-align: center;
+    }
+}
+
+#address, #contact-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media (max-height: 949px)  {
+    section {
+        height: 90vh;
+    }
+
+}

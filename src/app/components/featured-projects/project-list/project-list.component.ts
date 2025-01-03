@@ -20,8 +20,8 @@ export class ProjectListComponent {
       description:
         'Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assing users and categories.',
       tech: ['Javascript', 'Firebase', 'CSS', 'HTML'],
-      githubUrl: 'https://www.google.com',
-      liveTestUrl: 'https://www.youtube.com',
+      githubUrl: 'https://github.com/Sanorea/Join',
+      liveTestUrl: 'https://www.join.brianwester.de',
       imgPath: '/assets/images/pictures/join.png',
       icons: ['/assets/images/icons/Javascript.svg', '/assets/images/icons/Firebase.svg', '/assets/images/icons/css.svg', '/assets/images/icons/html.svg']
     },
@@ -31,8 +31,8 @@ export class ProjectListComponent {
       description:
         'Jump, run and throw game based on object-oriented approach. Help the mage find scrolls to summon and defeat a strong foe.',
       tech: ['Javascript', 'CSS', 'HTML'],
-      githubUrl: 'www.google.com',
-      liveTestUrl: 'www.youtube.com',
+      githubUrl: 'https://github.com/Monomaze/mana-trails',
+      liveTestUrl: 'https://www.manatrails.brianwester.de',
       imgPath: '/assets/images/pictures/manatrails.png',
       icons: ['/assets/images/icons/Javascript.svg', '/assets/images/icons/css.svg', '/assets/images/icons/html.svg']
     },
@@ -42,8 +42,8 @@ export class ProjectListComponent {
       description:
         'A Pokédex app using the known RESTful Pokémon API.',
       tech: ['Javascript', 'Rest-API', 'CSS', 'HTML'],
-      githubUrl: 'www.google.com',
-      liveTestUrl: 'www.youtube.com',
+      githubUrl: 'https://github.com/Monomaze/pokedex-web-app',
+      liveTestUrl: 'https://www.pokedex.brianwester.de',
       imgPath: '/assets/images/pictures/pokedex.png',
       icons: ['/assets/images/icons/Javascript.svg', '/assets/images/icons/Api.svg', '/assets/images/icons/css.svg', '/assets/images/icons/html.svg']
     },
@@ -54,7 +54,7 @@ export class ProjectListComponent {
         'Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assing users and categories.',
       tech: ['Angular', 'TypeScript', 'CSS', 'HTML'],
       githubUrl: 'www.google.com',
-      liveTestUrl: 'www.youtube.com',
+      liveTestUrl: 'https://www.brianwester.de',
       imgPath: '/assets/images/pictures/portfolio.png',
       icons: ['/assets/images/icons/Angular.svg', '/assets/images/icons/typescript.svg', '/assets/images/icons/css.svg', '/assets/images/icons/html.svg']
     },
