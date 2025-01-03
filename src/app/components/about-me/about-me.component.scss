@@ -21,7 +21,6 @@ p {
 }
 
 .photo {
-    max-width: 100%;
     width: 568px;
 }
 
@@ -85,6 +84,10 @@ p {
 
     .about-me-container, .photo-container {
         align-self: unset;
+    }
+
+    .photo {
+        max-width: 100%;
     }
 }
 

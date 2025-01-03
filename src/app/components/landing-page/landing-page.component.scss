@@ -239,3 +239,15 @@ button {
         }
     }
 }
+
+@media (max-width: 369px) {
+    .main-content {
+        >div {
+            gap: 18px;
+        }
+    }
+    
+    button {
+        font-size: 14px;
+    }
+}

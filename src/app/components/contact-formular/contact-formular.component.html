@@ -16,7 +16,7 @@
         <div class="border-bot">
             <div class="contact-input-container">
                 <label class="font-firacode" for="name">{{'contact.name' | translate}}</label>
-                <input #name="ngModel" [(ngModel)]="contactData.name" type="text" id="name" name="name" placeholder="{{'contact.nameText' | translate}}" required>
+                <input class="font-karla" #name="ngModel" [(ngModel)]="contactData.name" type="text" id="name" name="name" placeholder="{{'contact.nameText' | translate}}" required>
                 @if (!name.valid && name.touched && !name.disabled) {
                     <span class="validation-text">{{'contact.nameValid' | translate}}</span>
                 }
@@ -24,14 +24,14 @@
     
             <div class="contact-input-container">
                 <label class="font-firacode" for="email">{{'contact.email' | translate}}</label>
-                <input #email="ngModel" [(ngModel)]="contactData.email" type="email" id="email" name="email" placeholder="{{'contact.emailText' | translate}}" required pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}">
+                <input class="font-karla" #email="ngModel" [(ngModel)]="contactData.email" type="email" id="email" name="email" placeholder="{{'contact.emailText' | translate}}" required pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}">
                 @if (!email.valid && email.touched && !email.disabled) {
                     <span class="validation-text">{{'contact.emailValid' | translate}}</span>
                 }
             </div>
             <div class="contact-input-container">
                 <label class="font-firacode" for="message">{{'contact.message' | translate}}</label>
-                <textarea #message="ngModel" [(ngModel)]="contactData.message" id="message" name="message" placeholder="{{'contact.messageText' | translate}}" required></textarea>
+                <textarea class="font-karla" #message="ngModel" [(ngModel)]="contactData.message" id="message" name="message" placeholder="{{'contact.messageText' | translate}}" required></textarea>
                 @if (!message.valid && message.touched && !message.disabled) {
                     <span class="validation-text">{{'contact.messageValid' | translate}}</span>
                 }
