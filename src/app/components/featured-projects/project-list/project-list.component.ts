@@ -1,11 +1,12 @@
 import { Component, ViewChild } from '@angular/core';
 import { ProjectDetailsComponent } from './project-details/project-details.component';
 import { Project } from '../../../models/project.interface';
+import { TranslateModule, TranslateService } from "@ngx-translate/core";
 
 @Component({
   selector: 'app-project-list',
   standalone: true,
-  imports: [ProjectDetailsComponent],
+  imports: [ProjectDetailsComponent, TranslateModule],
   templateUrl: './project-list.component.html',
   styleUrl: './project-list.component.scss',
 })
@@ -28,7 +29,7 @@ export class ProjectListComponent {
       id: 2,
       title: 'ManaTrails',
       description:
-        'TRst',
+        'Jump, run and throw game based on object-oriented approach. Help the mage find scrolls to summon and defeat a strong foe.',
       tech: ['Javascript', 'CSS', 'HTML'],
       githubUrl: 'www.google.com',
       liveTestUrl: 'www.youtube.com',
@@ -37,9 +38,9 @@ export class ProjectListComponent {
     },
     {
       id: 3,
-      title: 'Pokedex',
+      title: 'Pokédex',
       description:
-        'Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assing users and categories.',
+        'A Pokédex app using the known RESTful Pokémon API.',
       tech: ['Javascript', 'Rest-API', 'CSS', 'HTML'],
       githubUrl: 'www.google.com',
       liveTestUrl: 'www.youtube.com',
@@ -48,7 +49,7 @@ export class ProjectListComponent {
     },
     {
       id: 4,
-      title: 'My Portfolio',
+      title: 'Portfolio',
       description:
         'Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assing users and categories.',
       tech: ['CSS', 'HTML'],
@@ -72,5 +73,9 @@ export class ProjectListComponent {
 
   nextEntry(): void {
     this.currentIndex = (this.currentIndex + 1) % this.projectData.length;
+  }
+
+  setCurrentIndex(i: number) {
+    this.currentIndex = i;
   }
 }

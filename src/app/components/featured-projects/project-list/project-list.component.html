@@ -1,6 +1,6 @@
 <div class="project-list">
     @for (entry of projectData; track entry.id; let i = $index) {
-        <div class="project-entry" (click)="dialog.show()">
+        <div class="project-entry" (click)="dialog.show(); setCurrentIndex(i);">
             <span class="title font-firacode">{{entry.title}}</span>
             <span class="tech font-karla">
                 @for (tech of entry.tech; track $index) {
@@ -19,7 +19,7 @@
 
                 <app-project-details [project]="projectData[currentIndex]"></app-project-details>
                  <div id="next-entry-btn" (click)="nextEntry()">
-                    <span>Next project</span>
+                    <span>{{'projectDetails.nextProject' | translate}}</span>
                     <img src="/assets/images/icons/arrow_forward.svg" alt="">
                  </div>
             </div>

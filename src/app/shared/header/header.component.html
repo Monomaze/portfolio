@@ -4,47 +4,47 @@
     <div id="burger-nav" class="burger-nav font-firacode">
         <a (click)="showBurgerNav()" href="#about-me">
             <div class="nav-btn">
-                <a class="nav-btn-txt">About me</a>
+                <a class="nav-btn-txt">{{'header.aboutMe' | translate}}</a>
                 <div class="dot-hover">&bull;</div>
             </div>
         </a>
         <a (click)="showBurgerNav()" href="#skills">
             <div class="nav-btn">
-                <a class="nav-btn-txt">Skills</a>
+                <a class="nav-btn-txt">{{'header.skills' | translate}}</a>
                 <div class="dot-hover">&bull;</div>
             </div>
         </a>
         <a (click)="showBurgerNav()" href="#projects">
             <div class="nav-btn">
-                <a  class="nav-btn-txt">Projects</a>
+                <a  class="nav-btn-txt">{{'header.projects' | translate}}</a>
                 <div class="dot-hover">&bull;</div>
             </div>
         </a>
         <div class="lang-btn-switch">
-            <div class="lang-btn active">EN</div>
-            <div class="lang-btn inactive">DE</div>
+            <div id="en-btn-m" (click)="useLanguage('en')" class="lang-btn active">EN</div>
+            <div id="de-btn-m" (click)="useLanguage('de')" class="lang-btn inactive">DE</div>
         </div>
     </div>
     <nav class="font-firacode">
         <div class="lang-btn-switch">
-            <div class="lang-btn active">EN</div>
-            <div class="lang-btn inactive">DE</div>
+            <div id="en-btn" (click)="useLanguage('en')" class="lang-btn active">EN</div>
+            <div id="de-btn" (click)="useLanguage('de')" class="lang-btn inactive">DE</div>
         </div>
         <a href="#about-me">
             <div class="nav-btn">
-                <a class="nav-btn-txt">About me</a>
+                <a class="nav-btn-txt">{{'header.aboutMe' | translate}}</a>
                 <div class="dot-hover">&bull;</div>
             </div>
         </a>
         <a href="#skills">
             <div class="nav-btn">
-                <a class="nav-btn-txt">Skills</a>
+                <a class="nav-btn-txt">{{'header.skills' | translate}}</a>
                 <div class="dot-hover">&bull;</div>
             </div>
         </a>
         <a href="#projects">
             <div class="nav-btn">
-                <a  class="nav-btn-txt">Projects</a>
+                <a class="nav-btn-txt">{{'header.projects' | translate}}</a>
                 <div class="dot-hover">&bull;</div>
             </div>
         </a>

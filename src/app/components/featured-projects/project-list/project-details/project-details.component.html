@@ -8,7 +8,15 @@
             <div id="project-des">
                 <h3 class="font-firacode">What is this project about?</h3>
                 <p class="font-karla">
-                    {{project.description}}
+                    @if (project.id == 1) {
+                        {{'projectDetails.descriptionJoin' | translate}}
+                    } @else if (project.id == 2) {
+                        {{'projectDetails.descriptionMana' | translate}}
+                    } @else if (project.id == 3) {
+                        {{'projectDetails.descriptionPoke' | translate}}
+                    } @else if (project.id == 4) {
+                        {{'projectDetails.descriptionPort' | translate}}
+                    } 
                 </p>
             </div>
             <div id="skill-list">

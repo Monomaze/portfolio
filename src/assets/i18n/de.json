@@ -1,0 +1,69 @@
+{
+    "header": {
+        "aboutMe": "Über mich",
+        "skills": "Skills",
+        "projects": "Projekte"
+    },
+    "landingPage": {
+        "job": "Frontend Webentwickler",
+        "workBtn": "Meine Arbeit",
+        "contactBtn": "Kontakt",
+        "bannerLocation": "Sitz in Dortmund",
+        "bannerText1": "Verfügbar für Remote-Arbeit",
+        "bannerText2": "Offen für neue Aufgaben"
+    },
+    "aboutMe": {
+        "sectionText": "Wer ich bin",
+        "headline": "Über mich",
+        "introText": "Hallo, ich bin ein deutschsprachiger Frontend-Entwickler aus Dortmund. Begeistert von den unbegrenzten Möglichkeiten der IT, bin ich motiviert, visuell ansprechende und intuitive Websites und Anwendungen zu erstellen.",
+        "bulletpoint1": "Flexibel in Bezug auf Arbeitsumgebungen: Ich kann sowohl vor Ort in Dortmund als auch remote effektiv arbeiten.",
+        "bulletpoint2": "Ich bin aufgeschlossen und stets auf der Suche nach persönlichen Herausforderungen, um mein Wissen und meine Fähigkeiten kontinuierlich zu verbessern.",
+        "bulletpoint3": "In meinem Beruf geht es beim Programmieren nicht nur um das Schreiben von Code; es ist eine kreative Form der Problemlösung. Ich bin stolz darauf, komplexe technische Herausforderungen in einfache, benutzerfreundliche Lösungen umzuwandeln. So helfe ich Ihnen, Ihre Ziele zu erreichen und Ihre Visionen Wirklichkeit werden zu lassen."
+    },
+    "skills": {
+        "sectionText": "Technologien",
+        "headline": "Skills",
+        "introText": "Mein Weg hat mich durch verschiedene Projekte geführt, bei denen ich eine Vielzahl von Frontend-Technologien und -Konzepten eingesetzt habe. Ich bin offen dafür, neue Technologien und Methoden zu erlernen, um meine Fähigkeiten kontinuierlich zu verbessern und in der sich ständig weiterentwickelnden Welt der Webentwicklung vorne zu bleiben.",
+        "subHeadline": "Sie benötigen einen anderen Skill?",
+        "subText": "Zögern Sie nicht, mich zu kontaktieren. Ich freue mich darauf, mein bisheriges Wissen zu erweitern."
+    },
+    "featuredProjects": {
+        "sectionText": "Technologien",
+        "headline": "Projekte",
+        "introText": "Entdecken Sie hier eine Auswahl meiner Arbeiten - Interagieren Sie mit Projekten, um meine Fähigkeiten in Aktion zu sehen."
+    },
+    "projectDetails": {
+        "headline": "Um was geht es in diesem Projekt?",
+        "descriptionJoin": "Vom Kanban-System inspirierter Aufgabenmanager. Erstellen und organisieren Sie Aufgaben mithilfe von Drag-and-Drop-Funktionen und ordnen Sie Benutzer und Kategorien zu.",
+        "descriptionMana": "Ein Spring-, Lauf- und Wurfspiel basierend auf einem objektorientierten Ansatz. Hilf dem Magier, Schriftrollen zu finden, um einen starken Gegner herbeizurufen und zu besiegen.",
+        "descriptionPoke": "Eine Webseite, die als Pokédex-App dient, wurde mit JavaScript entwickelt und nutzt die RESTful PokéAPI, um dynamisch Pokémon-Daten wie Namen, Typen und Fähigkeiten abzurufen.",
+        "descriptionPort": "Eine Portfolio-Webseite, die meine Fähigkeiten und Projekte im Bereich Webentwicklung präsentiert. Mit einer klaren Struktur und ansprechendem Design zeigt sie meine Expertise in Technologien wie Angular, TypeScript und SCSS.",
+        "nextProject": "Nächstes Projekt"
+    },
+    "contact": {
+        "sectionText": "Kontaktieren Sie mich",
+        "headline": "Arbeiten wir zusammen",
+        "subHeadline": "Haben Sie ein Problem zu lösen?",
+        "subText": "Kontaktieren Sie mich über dieses Formular. Ich bin daran interessiert, von Ihnen zu hören, Ihre Ideen kennenzulernen und mit meiner Arbeit zu Ihren Projekten beizutragen. Benötigen Sie einen Frontend-Entwickler? Lassen Sie uns sprechen!",
+        "name": "Name",
+        "nameText": "Ihr Name hier",
+        "email": "E-Mail",
+        "emailText": "deineemail@email.de",
+        "message": "Nachricht",
+        "messageText": "Hallo Brian, ich bin interessiert an...",
+        "privacyPolicyText1": "Ich habe die ",
+        "privacyPolicy": "Datenschutzerklärung",
+        "privacyPolicyText2": " und stimme der beschriebenen Verarbeitung meiner Daten zu.",
+        "submitBtn": "Sag Hallo ;)",
+        "nameValid": "Bitte tragen Sie Ihren Namen ein.",
+        "emailValid": "Bitte tragen Sie ihre E-Mail ein.",
+        "messageValid": "Bitte schreiben Sie eine Nachricht.",
+        "privacyValid": "Bitte akzeptieren Sie die Datenschutzerklärung."
+    },
+    "footer": {
+        "job": "Frontend Webentwickler",
+        "location": "Dortmund, Deutschland",
+        "email": "E-Mail",
+        "imprint": "Impressum"
+    }
+}

@@ -2,13 +2,12 @@
 
     <div class="contact-me-text-container">
         <div class="headlines">
-            <h2>Contact me</h2>
-            <h1 class="font-firacode">Let's work together</h1>
+            <h2>{{'contact.sectionText' | translate}}</h2>
+            <h1 class="font-firacode">{{'contact.headline' | translate}}</h1>
         </div>
         <div class="info-container">
-            <h3 class="font-firacode">Got a problem to solve?</h3>
-            <p>Contact me through this form, I am interested in hearing from you, knowing your ideas and contributing to your projects with my work.
-            Need a Frontend developer? Let's talk!</p>
+            <h3 class="font-firacode">{{'contact.subHeadline' | translate}}</h3>
+            <p>{{'contact.subText' | translate}}</p>
         </div>
     </div>
 
@@ -16,38 +15,38 @@
     <div>
         <div class="border-bot">
             <div class="contact-input-container">
-                <label class="font-firacode" for="name">Name</label>
-                <input #name="ngModel" [(ngModel)]="contactData.name" type="text" id="name" name="name" placeholder="Your name goes here" required>
+                <label class="font-firacode" for="name">{{'contact.name' | translate}}</label>
+                <input #name="ngModel" [(ngModel)]="contactData.name" type="text" id="name" name="name" placeholder="{{'contact.nameText' | translate}}" required>
                 @if (!name.valid && name.touched && !name.disabled) {
-                    <span class="validation-text">Please enter your name</span>
+                    <span class="validation-text">{{'contact.nameValid' | translate}}</span>
                 }
             </div>
     
             <div class="contact-input-container">
-                <label class="font-firacode" for="email">Email</label>
-                <input #email="ngModel" [(ngModel)]="contactData.email" type="email" id="email" name="email" placeholder="youremail@email.com" required pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}">
+                <label class="font-firacode" for="email">{{'contact.email' | translate}}</label>
+                <input #email="ngModel" [(ngModel)]="contactData.email" type="email" id="email" name="email" placeholder="{{'contact.emailText' | translate}}" required pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}">
                 @if (!email.valid && email.touched && !email.disabled) {
-                    <span class="validation-text">Please enter your email</span>
+                    <span class="validation-text">{{'contact.emailValid' | translate}}</span>
                 }
             </div>
             <div class="contact-input-container">
-                <label class="font-firacode" for="message">Message</label>
-                <textarea #message="ngModel" [(ngModel)]="contactData.message" id="message" name="message" placeholder="Hello Brian, I am interested in..." required></textarea>
+                <label class="font-firacode" for="message">{{'contact.message' | translate}}</label>
+                <textarea #message="ngModel" [(ngModel)]="contactData.message" id="message" name="message" placeholder="{{'contact.messageText' | translate}}" required></textarea>
                 @if (!message.valid && message.touched && !message.disabled) {
-                    <span class="validation-text">Please enter a message</span>
+                    <span class="validation-text">{{'contact.messageValid' | translate}}</span>
                 }
             </div>
         </div>
     </div>
     <div>
         <input type="checkbox" id="check" (change)="toggleEditable()" required>
-        <label class="font-karla" for="check">I've read the <a href="" class="font-firacode checkbox-label-url">privacy policy</a> and agree to the processing of my data as outlined.</label>
-        <span id="privacy-error" class="validation-text">Please accept the privacy policy</span> 
+        <label class="font-karla" for="check">{{'contact.privacyPolicyText1' | translate}}<a href="" class="font-firacode checkbox-label-url">{{'contact.privacyPolicy' | translate}}</a>{{'contact.privacyPolicyText2' | translate}}</label>
+        <span id="privacy-error" class="validation-text">{{'contact.privacyValid' | translate}}</span> 
     </div>
     @if (email.valid && name.valid && message.valid && editable == true) {
-        <button class="EnabledBtn" id="submit" type="submit" value="Submit">Say Hello ;)</button>
+        <button class="EnabledBtn" id="submit" type="submit" value="Submit">{{'contact.submitBtn' | translate}}</button>
     } @else {
-        <button id="submit" type="submit" value="Submit" disabled>Say Hello ;)</button>
+        <button id="submit" type="submit" value="Submit" disabled>{{'contact.submitBtn' | translate}}</button>
     }
 
   
