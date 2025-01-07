@@ -47,17 +47,6 @@ export class ProjectListComponent {
       imgPath: '/assets/images/pictures/pokedex.png',
       icons: ['/assets/images/icons/Javascript.svg', '/assets/images/icons/Api.svg', '/assets/images/icons/css.svg', '/assets/images/icons/html.svg']
     },
-    {
-      id: 4,
-      title: 'Portfolio',
-      description:
-        'Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assing users and categories.',
-      tech: ['Angular', 'TypeScript', 'CSS', 'HTML'],
-      githubUrl: 'www.google.com',
-      liveTestUrl: 'https://www.brianwester.de',
-      imgPath: '/assets/images/pictures/portfolio.png',
-      icons: ['/assets/images/icons/Angular.svg', '/assets/images/icons/typescript.svg', '/assets/images/icons/css.svg', '/assets/images/icons/html.svg']
-    },
   ];
 
   openDialog(index: number): void {

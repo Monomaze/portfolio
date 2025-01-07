@@ -3,6 +3,31 @@
 * {
     margin: 0;
     scroll-behavior: smooth;
+    scrollbar-color: #3DCFB6 #1C1C1C;
+    scrollbar-width: thin;
+}
+
+@supports selector(::-webkit-scrollbar) {
+    ::-webkit-scrollbar-track {
+        background: #1C1C1C;
+    }
+    
+    ::-webkit-scrollbar-thumb {
+        background: #3DCFB6;
+        border-radius: 99px;
+    }
+    
+    ::-webkit-scrollbar-thumb:hover {
+        background: #08463B;
+    }
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    -webkit-box-shadow: 0 0 0 30px #1C1C1C inset !important;
+    -webkit-text-fill-color: #3DCFB6 !important;
 }
 
 h1 {

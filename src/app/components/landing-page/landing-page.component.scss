@@ -4,6 +4,16 @@ section {
     width: 100%;
     position: relative;
     overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrapper {
+    height: 100vh;
+    width: 100%;
+    max-width: 1920px;
+    position: relative;
 }
 
 a {
@@ -69,14 +79,13 @@ button {
     position: absolute;
     bottom: 8%;
     backdrop-filter: blur(5px);
+    gap: 56px;
 }
 
 .marquee {
-    --gap: 56px;
     display: flex;
     overflow: hidden;
     user-select: none;
-    gap: var(--gap);
 }
 
 .marquee-content {
@@ -85,11 +94,9 @@ button {
     color: #3DCFB6;
     flex-shrink: 0;
     display: flex;
-    justify-content: space-around;
-    min-width: 100%;
     padding: 12px 32px;
     animation: txt-scroll-animation 15s linear infinite;
-    gap: var(--gap);
+    gap: 56px;
     >div {
         display: flex;
         flex-direction: row; 
@@ -167,10 +174,8 @@ button {
 
 /* Animations */
 @keyframes txt-scroll-animation {
-    from {
-        transform: translateX(0)
-    } to {
-        transform: translateX(calc(-100% - var(--gap)));
+    to {
+        transform: translateX(calc(-100vw - 200px));
     }
 }
 

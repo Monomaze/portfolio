@@ -138,6 +138,10 @@ button {
     background-image: url("../../../../src/assets/images/icons/checked_hover.svg");
 }
 
+.checkbox-label {
+    margin-right: 16px;
+}
+
 .checkbox-label-url {
     color: #3DCFB6;
     text-decoration: none;
@@ -163,7 +167,7 @@ button {
         flex-direction: column;
         gap: 64px;
         align-items: center;
-        padding: 80px 16px;
+        padding: 20px 16px 80px 16px;
     }
 }
 
@@ -183,5 +187,6 @@ button {
 
     #privacy-error {
         margin-top: 40px;
+        text-align: center;
     }
 }

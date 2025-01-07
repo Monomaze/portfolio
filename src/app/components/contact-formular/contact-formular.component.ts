@@ -38,7 +38,8 @@ export class ContactFormularComponent {
       this.http.post(this.post.endPoint, this.post.body(this.contactData))
         .subscribe({
           next: (response) => {
-            ngForm.resetForm();
+            ngForm.reset();
+            this.unCheckAll();
             this.showSuccess();
           },
           error: (error) => {
@@ -47,7 +48,7 @@ export class ContactFormularComponent {
           complete: () => console.info('send post complete'),
         });
     } else if (ngForm.submitted && ngForm.form.valid && this.mailTest) {
-
+      this.unCheckAll();
       ngForm.resetForm();
     } 
   }
@@ -64,5 +65,10 @@ export class ContactFormularComponent {
 
   showSuccess() {
     document.getElementById('success-msg')?.classList.remove('d-none');
+  }
+
+  unCheckAll() {
+    let checkbox = document.getElementById('check') as HTMLInputElement;
+    checkbox.checked = false;
   }
 }

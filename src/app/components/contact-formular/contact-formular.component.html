@@ -12,46 +12,44 @@
     </div>
 
     <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
-    <div>
-        <div class="border-bot">
-            <div class="contact-input-container">
-                <label class="font-firacode" for="name">{{'contact.name' | translate}}</label>
-                <input class="font-karla" #name="ngModel" [(ngModel)]="contactData.name" type="text" id="name" name="name" placeholder="{{'contact.nameText' | translate}}" required>
-                @if (!name.valid && name.touched && !name.disabled) {
-                    <span class="validation-text font-firacode">{{'contact.nameValid' | translate}}</span>
-                }
-            </div>
-    
-            <div class="contact-input-container">
-                <label class="font-firacode" for="email">{{'contact.email' | translate}}</label>
-                <input class="font-karla" #email="ngModel" [(ngModel)]="contactData.email" type="email" id="email" name="email" placeholder="{{'contact.emailText' | translate}}" required pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}">
-                @if (!email.valid && email.touched && !email.disabled) {
-                    <span class="validation-text font-firacode">{{'contact.emailValid' | translate}}</span>
-                }
-            </div>
-            <div class="contact-input-container">
-                <label class="font-firacode" for="message">{{'contact.message' | translate}}</label>
-                <textarea class="font-karla" #message="ngModel" [(ngModel)]="contactData.message" id="message" name="message" placeholder="{{'contact.messageText' | translate}}" required></textarea>
-                @if (!message.valid && message.touched && !message.disabled) {
-                    <span class="validation-text font-firacode">{{'contact.messageValid' | translate}}</span>
-                }
+        <div>
+            <div class="border-bot">
+                <div class="contact-input-container">
+                    <label class="font-firacode" for="name">{{'contact.name' | translate}}</label>
+                    <input class="font-karla" #name="ngModel" [(ngModel)]="contactData.name" type="text" id="name" name="name" placeholder="{{'contact.nameText' | translate}}" required>
+                    @if (!name.valid && name.touched && !name.disabled) {
+                        <span class="validation-text font-firacode">{{'contact.nameValid' | translate}}</span>
+                    }
+                </div>
+        
+                <div class="contact-input-container">
+                    <label class="font-firacode" for="email">{{'contact.email' | translate}}</label>
+                    <input class="font-karla" #email="ngModel" [(ngModel)]="contactData.email" type="email" id="email" name="email" placeholder="{{'contact.emailText' | translate}}" required pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}">
+                    @if (!email.valid && email.touched && !email.disabled) {
+                        <span class="validation-text font-firacode">{{'contact.emailValid' | translate}}</span>
+                    }
+                </div>
+                <div class="contact-input-container">
+                    <label class="font-firacode" for="message">{{'contact.message' | translate}}</label>
+                    <textarea class="font-karla" #message="ngModel" [(ngModel)]="contactData.message" id="message" name="message" placeholder="{{'contact.messageText' | translate}}" required></textarea>
+                    @if (!message.valid && message.touched && !message.disabled) {
+                        <span class="validation-text font-firacode">{{'contact.messageValid' | translate}}</span>
+                    }
+                </div>
             </div>
         </div>
-    </div>
-    <div>
-        <input type="checkbox" id="check" (change)="toggleEditable()" required>
-        <label class="font-karla" for="check">{{'contact.privacyPolicyText1' | translate}}<a href="/privacy-policy" class="font-firacode checkbox-label-url">{{'contact.privacyPolicy' | translate}}</a>{{'contact.privacyPolicyText2' | translate}}</label>
-        <span id="privacy-error" class="validation-text font-firacode">{{'contact.privacyValid' | translate}}</span> 
-    </div>
-    @if (email.valid && name.valid && message.valid && editable == true) {
-        <button class="EnabledBtn" id="submit" type="submit" value="Submit">{{'contact.submitBtn' | translate}}</button>
-    } @else {
-        <button id="submit" type="submit" value="Submit" disabled>{{'contact.submitBtn' | translate}}</button>
-    }
-    <div id="success-msg" class="d-none">
-        <span class="success-alert font-firacode">{{'contact.successText' | translate}}</span>
-    </div>
-
-  
+        <div class="checkbox">
+            <input type="checkbox" id="check" (change)="toggleEditable()" required>
+            <label class="font-karla checkbox-label" for="check">{{'contact.privacyPolicyText1' | translate}}<a href="/privacy-policy" class="font-firacode checkbox-label-url">{{'contact.privacyPolicy' | translate}}</a>{{'contact.privacyPolicyText2' | translate}}</label>
+            <span id="privacy-error" class="validation-text font-firacode">{{'contact.privacyValid' | translate}}</span> 
+        </div>
+        @if (email.valid && name.valid && message.valid && editable == true) {
+            <button class="EnabledBtn" id="submit" type="submit" value="Submit">{{'contact.submitBtn' | translate}}</button>
+        } @else {
+            <button id="submit" type="submit" value="Submit" disabled>{{'contact.submitBtn' | translate}}</button>
+        }
+        <div id="success-msg" class="d-none">
+            <span class="success-alert font-firacode">{{'contact.successText' | translate}}</span>
+        </div>
     </form>
 </section>
