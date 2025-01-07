@@ -7,6 +7,10 @@
     scrollbar-width: thin;
 }
 
+html, body {
+    overflow-x: hidden;
+}
+
 @supports selector(::-webkit-scrollbar) {
     ::-webkit-scrollbar-track {
         background: #1C1C1C;
