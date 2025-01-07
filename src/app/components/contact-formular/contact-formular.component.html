@@ -40,7 +40,7 @@
         </div>
         <div class="checkbox">
             <input type="checkbox" id="check" (change)="toggleEditable()" required>
-            <label class="font-karla checkbox-label" for="check">{{'contact.privacyPolicyText1' | translate}}<a href="/privacy-policy" class="font-firacode checkbox-label-url">{{'contact.privacyPolicy' | translate}}</a>{{'contact.privacyPolicyText2' | translate}}</label>
+            <label class="font-karla checkbox-label" for="check">{{'contact.privacyPolicyText1' | translate}}<a routerLink="/privacy-policy" (click)="scrollToTop()" class="font-firacode checkbox-label-url">{{'contact.privacyPolicy' | translate}}</a>{{'contact.privacyPolicyText2' | translate}}</label>
             <span id="privacy-error" class="validation-text font-firacode">{{'contact.privacyValid' | translate}}</span> 
         </div>
         @if (email.valid && name.valid && message.valid && editable == true) {

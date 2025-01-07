@@ -2,11 +2,12 @@ import { HttpClient } from '@angular/common/http';
 import { Component, inject } from '@angular/core';
 import { FormsModule, NgForm} from '@angular/forms';
 import { TranslateModule, TranslateService } from "@ngx-translate/core";
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-contact-formular',
   standalone: true,
-  imports: [FormsModule, TranslateModule],
+  imports: [FormsModule, TranslateModule, RouterLink],
   templateUrl: './contact-formular.component.html',
   styleUrl: './contact-formular.component.scss'
 })
@@ -70,5 +71,9 @@ export class ContactFormularComponent {
   unCheckAll() {
     let checkbox = document.getElementById('check') as HTMLInputElement;
     checkbox.checked = false;
+  }
+
+  scrollToTop() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
   }
 }
