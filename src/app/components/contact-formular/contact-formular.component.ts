@@ -3,6 +3,7 @@ import { Component, inject } from '@angular/core';
 import { FormsModule, NgForm} from '@angular/forms';
 import { TranslateModule, TranslateService } from "@ngx-translate/core";
 import { RouterLink } from '@angular/router';
+import AOS from "aos";
 
 @Component({
   selector: 'app-contact-formular',
@@ -76,4 +77,8 @@ export class ContactFormularComponent {
   scrollToTop() {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   }
+
+  ngOnInit() {
+    AOS.init();
+  }  
 }

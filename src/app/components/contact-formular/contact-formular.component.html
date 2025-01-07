@@ -1,6 +1,6 @@
 <section class="font-karla" id="contact">
 
-    <div class="contact-me-text-container">
+    <div class="contact-me-text-container" data-aos="fade-right" data-aos-duration="2000">
         <div class="headlines">
             <h2>{{'contact.sectionText' | translate}}</h2>
             <h1 class="font-firacode">{{'contact.headline' | translate}}</h1>
@@ -11,7 +11,7 @@
         </div>
     </div>
 
-    <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
+    <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm" data-aos="fade-left" data-aos-duration="2000">
         <div>
             <div class="border-bot">
                 <div class="contact-input-container">
